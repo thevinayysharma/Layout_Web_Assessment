@@ -1,0 +1,48 @@
+* {
+    background-color: #f1f5f9;
+  }
+  
+  .both {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15vh;
+    resize: both;
+    background: #e2e8f0;
+  }
+  
+  .red {
+    width: 130px;
+    height: 160px;
+    margin: 10px 1rem;
+    overflow: auto;
+    resize: both;
+    background: #ef476f;
+    font-size: 14px;
+    font-family: monospace;
+  }
+  .yellow {
+    width: 600px;
+    height: 160px;
+    margin: 10px 1rem;
+    overflow: auto;
+    resize: both;
+    background: #ffd166;
+    font-size: 14px;
+    font-family: monospace;
+  }
+  
+  .msg {
+    background: #ffd166;
+  }
+  
+  p {
+    padding-left: 2px;
+  }
+  
+  .container {
+    resize: both;
+    overflow: auto;
+    max-width: 100vw;
+  }
+  
