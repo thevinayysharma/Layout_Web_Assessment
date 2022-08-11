@@ -2,7 +2,8 @@
 
 ### [Web_Assessment_via_Precily](https://precily.com/)
 
-GIF
+![weblayout_mp4](https://user-images.githubusercontent.com/68610608/184124317-159a8850-834c-4836-a2d0-0af559e97c58.gif)
+---
 ![image](https://user-images.githubusercontent.com/68610608/184123127-9a3c89c2-1b2e-4b6c-8666-566329c6c0e9.png)
 
 
