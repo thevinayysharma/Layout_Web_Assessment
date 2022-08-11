@@ -73,8 +73,10 @@ Update API.
 - [✔️] Provide Automation in your CI/CD Pipeline that you push the new API Changes and job gets triggered to deploy the new feature
 - [] Attach the screenshot of scripts used and pipeline execution.
 ![image](https://user-images.githubusercontent.com/68610608/184121866-9059686b-96df-4720-97ac-ef33e895a9a5.png)
+![image](https://user-images.githubusercontent.com/68610608/184122312-7a73187f-8496-45f6-b4f3-44a158547fda.png)
+
 ---
->scipt ss added
+>Pipeline and CI/CD ss added. Failed due to non-dockerized build.
 
 - [✔️]  Test the Deployed APIs using any API Testing tool e.g. Postman
 
