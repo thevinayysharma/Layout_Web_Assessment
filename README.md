@@ -85,5 +85,7 @@ Things to consider:
 - [✔️] Clean code with proper commenting.
 > Semantic commits and code forma using prettier.
 - [✔️] Mention the execution time for each API
+![image](https://user-images.githubusercontent.com/68610608/184121244-13b6c945-2796-4a6c-a913-5a40fb636c37.png)
+---
 - [✔️] Provide the table/collection for database. > Inbuilt with RAPID API support.
 - [✔️] Provide basic validations if needed
