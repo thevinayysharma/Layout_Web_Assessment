@@ -1,60 +1,89 @@
-# Precily_Web_Assessment
+# ABOUT PROJECT
 
-- Resizable Component Built with CRA. 
-- Added with docker[ not woking] upport and git actions.
+### [Web_Assessment_via_Precily](https://precily.com/)
+
+GIF
+
+- Resizable Components built using React. 
+- Dockerized and supported with git actions. (!working)
+
+```
+Stats:
+
+Total time spent: 
+15-17hrs ==> Includes Planning, Research, Build, Documenting(readme), Debugging.
+
+```
+
+## Packages used:
+- CRA template(OSS)
+- Bootstrap(OSS
+- Docker(OSS)
+- Rapid_API(freemium)
+
+## Platform used:
+- Github: git actions for containerized scripts.
+- Stackblitz: For hosting MVP plain frontend.
+---
+
+### Task_1: Part-A
+
+- [✔️] It consists of three different components with some content (feel free to add any HTML content or Images).  
+- [✔️] User Should be able to Re-size the components by dragging them from any of the sides.   Interesting learn.
+> Draggable support using CSS resize property. 
+Alternatives: [React-grid-layout](https://www.npmjs.com/package/react-grid-layout), [React-rnd](https://bokuweb.github.io/react-rnd/stories/?path=/story/bare--bare), [React-resize-panel](https://www.npmjs.com/package/react-resize-panel)
+- [✔️] The neighbour components should expand or shrink based on re-sizing operations performed on target component.   
+- [✔️ ] Layout should be responsive on all laptop devices.
+- [✔️]  The code should be clean and of production quality. (good enough) 
 
 
-### part-1
+### Task_1: Part-B
 
-- [ ] It consists of three different components with some content (feel free to add any HTML content or Images).  
- - [ ]User Should be able to Re-size the components by dragging them from any of the sides.   
-- [ ] The neighbour components should expand or shrink based on re-sizing operations performed on target component.   
-- [ ] You can use any open-source Library.   
-- [ ]Layout should be responsive on all laptop devices.   • The code should be clean and of production quality. 
-
-
-### part-2:
-
-* [ ] Containerize the Web Application You Developed using Docker.
-*  [ ] Construct a Well Defined Docker file including ENV, RUN, CMD Commands.  
-- [ ] Deploy the Container using any CI tool like Jenkins, or Git Actions etc.  
+- [✔️] Containerize the Web Application You Developed using Docker.
+> Docker didn't worked out due to low end laptop[Penitum process with windows 8.1] and VM problems. Scripts added though. Required docker build during development.
+- [✔️] Construct a Well Defined Docker file including ENV, RUN, CMD Commands.  
+- [✔️ ] Deploy the Container using any CI tool like Jenkins, or Git Actions etc.  
 - [ ]Deploy on Heroku.
+> Not performed. [More on Heroku dynos](https://www.heroku.com/dynos) 
 
+<samp>xtras</samp>
 - [ ]Real Time Monitoring of the Deployed Application.
 - [ ]Any Approach to Ship the logs of Hosted Application to any remote storage.
 
-### part-3:
 
-Task 2: Create APIs for the front end you have created in the previous
-task
+### Task_2: Part-A
 
-API to add/edit in these components:
+- Create APIs for the front end you have created in the previous task. API to add/edit in these components:
+
+//stats component image
 
 There should be two button:-
-1) Add: On clicking Add button, if there is any data it should get clear and
+- [✔️] Add: On clicking Add button, if there is any data it should get clear and
 user should be able to add new data.(It will create new entry in the table)
 
-2) Update: On clicking this button user should be able to update the data.
+- [✔️] Update: On clicking this button user should be able to update the data.
 (It will update entries in the table)
 
-3) Count: API to show number of times(count), user has called ADD and
+- [✔️] Count: API to show number of times(count), user has called ADD and
 Update API.
 
-Things to consider:
 
-a) Clean code with proper commenting
-b) Mention the execution time for each API
-c) Provide the table/collection for database.
-d) Provide basic validations if needed
+### Task_2: Part-B
 
-e) Can use any database.
+- [✔️] Provide Automation in your CI/CD Pipeline that you push the new API Changes and job gets triggered to deploy the new feature
+- [] Attach the screenshot of scripts used and pipeline execution.
+//image
+>scipt ss added
 
-
-### part-4:(Deployment)
-
-1) Provide Automation in your CI/CD Pipeline that you push the new API Changes and job gets triggered to deploy the new feature
-2) Attach the screenshot of scripts used and pipeline execution
-3) Test the Deployed APIs using any API Testing tool e.g. Postman
+- [✔️]  Test the Deployed APIs using any API Testing tool e.g. Postman
 
 <!-- 
 https://docs.docker.com/ci-cd/github-actions/ -->
+
+Things to consider:
+
+- [✔️] Clean code with proper commenting.
+> Semantic commits and code forma using prettier.
+- [✔️] Mention the execution time for each API
+- [✔️] Provide the table/collection for database. > Inbuilt with RAPID API support.
+- [✔️] Provide basic validations if needed
