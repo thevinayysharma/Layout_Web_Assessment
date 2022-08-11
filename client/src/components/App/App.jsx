@@ -1,29 +1,27 @@
-import React from 'react';
-import './App.css';
-import { useState, useEffect } from 'react';
-import Friends from '../Friends/Friends';
+import React from "react";
+import "./App.css";
+import Friends from "../Friends/Friends";
+import { useState, useEffect } from "react";
 
-const API_KEY =`${process.env.REACT_APP_API_KEY}`;
-console.log(API_KEY);
-
+const API_KEY = `${process.env.REACT_APP_API_KEY}`;
 
 export default function App() {
-  const [date, setDate] = useState(new Date());
-  const [count, setCount] = useState(0);
-  const [addapiexecuted, setAddApiExecuted] = useState('');
-  const [updapiexecuted, setUpdApiExecuted] = useState('');
-  const [id, setID] = useState('');
-  const [name, setName] = useState('');
-  const [notes, setNotes] = useState('');
+  const [id, setID] = useState("");
+  const [name, setName] = useState("");
+  const [notes, setNotes] = useState("");
   const [friends, setFriends] = useState([]);
+  const [count, setCount] = useState(0);
+  const [date, setDate] = useState(new Date());
+  const [addapiexecuted, setAddApiExecuted] = useState("");
+  const [updapiexecuted, setUpdApiExecuted] = useState("");
 
   // get all entities - GET
   useEffect(() => {
-    fetch('https://fairestdb.p.rapidapi.com/friend/friendModel', {
-      method: 'GET',
+    fetch("https://fairestdb.p.rapidapi.com/friend/friendModel", {
+      method: "GET",
       headers: {
-        'x-rapidapi-host': 'fairestdb.p.rapidapi.com',
-        'x-rapidapi-key': API_KEY,
+        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
+        "x-rapidapi-key": API_KEY,
       },
     })
       .then((response) => response.json())
@@ -35,18 +33,16 @@ export default function App() {
       });
   });
 
+  // add entity - POST
   const create = (e) => {
-    // add entity - POST
     e.preventDefault();
-
-    // creates entity
-    fetch('https://fairestdb.p.rapidapi.com/friend/friendModel', {
-      method: 'POST',
+    fetch("https://fairestdb.p.rapidapi.com/friend/friendModel", {
+      method: "POST",
       headers: {
-        'x-rapidapi-host': 'fairestdb.p.rapidapi.com',
-        'x-rapidapi-key': API_KEY,
-        'content-type': 'application/json',
-        accept: 'application/json',
+        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
+        "x-rapidapi-key": API_KEY,
+        "content-type": "application/json",
+        accept: "application/json",
       },
       body: JSON.stringify({
         name: name,
@@ -62,18 +58,17 @@ export default function App() {
       });
   };
 
+  // update entity - PUT
   const update = (e) => {
-    // update entity - PUT
     e.preventDefault();
 
-    // this will update entries with PUT
-    fetch('https://fairestdb.p.rapidapi.com/friend/friendModel', {
-      method: 'PUT',
+    fetch("https://fairestdb.p.rapidapi.com/friend/friendModel", {
+      method: "PUT",
       headers: {
-        'x-rapidapi-host': 'fairestdb.p.rapidapi.com',
-        'x-rapidapi-key': API_KEY,
-        'content-type': 'application/json',
-        accept: 'application/json',
+        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
+        "x-rapidapi-key": API_KEY,
+        "content-type": "application/json",
+        accept: "application/json",
       },
       body: JSON.stringify({
         _id: id,
@@ -90,15 +85,14 @@ export default function App() {
       });
   };
 
+  // delete entity - DELETE
   const deletex = (e) => {
-    // delete entity - DELETE
     e.preventDefault();
-    // deletes entities
     fetch(`https://fairestdb.p.rapidapi.com/friend/friendModel/_id/${id}`, {
-      method: 'DELETE',
+      method: "DELETE",
       headers: {
-        'x-rapidapi-host': 'fairestdb.p.rapidapi.com',
-        'x-rapidapi-key': API_KEY,
+        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
+        "x-rapidapi-key": API_KEY,
       },
     })
       .then((response) => response.json())
@@ -110,27 +104,28 @@ export default function App() {
       });
   };
 
+  // udpates "statistics" state for API Executed
   const handleAddAPITime = () => {
-    setAddApiExecuted(date.toLocaleTimeString());
     setDate(date);
     setCount((count) => count + 1);
+    setAddApiExecuted(date.toLocaleTimeString());
   };
 
   const handleUpdateAPITime = () => {
-    setUpdApiExecuted(date.toLocaleTimeString());
     setDate(date);
     setCount((count) => count + 1);
+    setUpdApiExecuted(date.toLocaleTimeString());
   };
 
   return (
     <div>
-      <div className="both">
-        <div className="red">
+      <div className="Upper__Draggable_Components">
+        <div className="red__component">
           <div className="subred">
             <p>Try resizing boxes</p>
           </div>
         </div>
-        <div className="yellow">
+        <div className="yellow__component">
           <div className="subyellow">
             <p>Stats:</p>
           </div>
@@ -185,7 +180,10 @@ export default function App() {
               <button
                 className="btn btn-primary"
                 type="button"
-                onClick={function(e){ create(e); handleAddAPITime(e)}}
+                onClick={function (e) {
+                  create(e);
+                  handleAddAPITime(e);
+                }}
               >
                 Add
               </button>
@@ -193,7 +191,10 @@ export default function App() {
               <button
                 className="btn btn-info"
                 type="button"
-                onClick={function(e){ update(e); handleUpdateAPITime(e);}}
+                onClick={function (e) {
+                  update(e);
+                  handleUpdateAPITime(e);
+                }}
               >
                 Update
               </button>
@@ -201,7 +202,10 @@ export default function App() {
               <button
                 className="btn btn-danger"
                 type="button"
-                onClick={function(e){ deletex(e); setCount(count + 1);}}
+                onClick={function (e) {
+                  deletex(e);
+                  setCount(count + 1);
+                }}
               >
                 Delete
               </button>
