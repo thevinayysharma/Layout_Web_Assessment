@@ -1,8 +1,12 @@
 # ABOUT PROJECT
 
-### [Web_Assessment_via_Precily](https://precily.com/)
+<samp> [Web_Assessment_via_Precily](https://precily.com/)<samp>
 
-![weblayout_mp4](https://user-images.githubusercontent.com/68610608/184124317-159a8850-834c-4836-a2d0-0af559e97c58.gif)
+<Samp>[ Live Dummy Application](https://resizable-react-webapp.stackblitz.io)<samp>
+
+Images:
+
+![final_gif](https://user-images.githubusercontent.com/68610608/184134895-4ca043d6-edf8-4d77-abd8-d37959dfe83e.gif)
 ---
 ![image](https://user-images.githubusercontent.com/68610608/184123127-9a3c89c2-1b2e-4b6c-8666-566329c6c0e9.png)
 
@@ -76,13 +80,15 @@ Update API.
 - [✔️] Provide Automation in your CI/CD Pipeline that you push the new API Changes and job gets triggered to deploy the new feature
 - [✔️] Attach the screenshot of scripts used and pipeline execution.
 
-![image](https://user-images.githubusercontent.com/68610608/184121866-9059686b-96df-4720-97ac-ef33e895a9a5.png)
-![image](https://user-images.githubusercontent.com/68610608/184122312-7a73187f-8496-45f6-b4f3-44a158547fda.png)
-
----
 >Pipeline and CI/CD ss added. Failed due to non-dockerized build.
 
-- [✔️]  Test the Deployed APIs using any API Testing tool e.g. Postman
+![image](https://user-images.githubusercontent.com/68610608/184121866-9059686b-96df-4720-97ac-ef33e895a9a5.png)
+---
+![image](https://user-images.githubusercontent.com/68610608/184122312-7a73187f-8496-45f6-b4f3-44a158547fda.png)
+
+
+- []  Test the Deployed APIs using any API Testing tool e.g. Postman
+> RAPID_API_Platoform_issues | didn't got subscribed to endpoints.
 
 <!-- 
 https://docs.docker.com/ci-cd/github-actions/ -->
@@ -93,10 +99,6 @@ Things to consider:
 > Semantic commits and code forma using prettier.
 - [✔️] Mention the execution time for each API
 ![image](https://user-images.githubusercontent.com/68610608/184121244-13b6c945-2796-4a6c-a913-5a40fb636c37.png)
----
-
-- [✔️] Provide the table/collection for database. > Inbuilt with RAPID API support.
-- [✔️] Provide basic validations if needed
 
 ## ACKNOWLEDGEMENTS
 - Good learning experience.
