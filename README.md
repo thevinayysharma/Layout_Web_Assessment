@@ -43,23 +43,22 @@ Alternatives: [React-grid-layout](https://www.npmjs.com/package/react-grid-layou
 
 ### Task_1: Part-B
 
-- [✔️] Containerize the Web Application You Developed using Docker.
-> Docker didn't worked out due to low end laptop[Penitum process with windows 8.1] and VM problems. Scripts added though. Required docker build during development.
+- [✔️] Containerize the Web Application You Developed using Docker. (did partially)
+> Docker didn't worked out due to low end laptop[Penitum processor with windows 8.1] and VM problems. Scripts added though. Required docker build during development.
 - [✔️] Construct a Well Defined Docker file including ENV, RUN, CMD Commands.  
-- [✔️ ] Deploy the Container using any CI tool like Jenkins, or Git Actions etc.  
+- [✔️] Deploy the Container using any CI tool like Jenkins, or Git Actions etc.  
 - [ ]Deploy on Heroku.
 > Not performed. [More on Heroku dynos](https://www.heroku.com/dynos) 
 
-<samp>xtras</samp>
+<samp>xtras</samp> [WORKING [✔️]]
 - [ ]Real Time Monitoring of the Deployed Application.
 - [ ]Any Approach to Ship the logs of Hosted Application to any remote storage.
 
 
 ### Task_2: Part-A
 
-- Create APIs for the front end you have created in the previous task. API to add/edit in these components:
+<samp>Create APIs for the front end you have created in the previous task. API to add/edit in these components.<samp>
 
-//stats component image
 
 There should be two button:-
 - [✔️] Add: On clicking Add button, if there is any data it should get clear and
@@ -75,7 +74,8 @@ Update API.
 ### Task_2: Part-B
 
 - [✔️] Provide Automation in your CI/CD Pipeline that you push the new API Changes and job gets triggered to deploy the new feature
-- [] Attach the screenshot of scripts used and pipeline execution.
+- [✔️] Attach the screenshot of scripts used and pipeline execution.
+
 ![image](https://user-images.githubusercontent.com/68610608/184121866-9059686b-96df-4720-97ac-ef33e895a9a5.png)
 ![image](https://user-images.githubusercontent.com/68610608/184122312-7a73187f-8496-45f6-b4f3-44a158547fda.png)
 
@@ -94,5 +94,9 @@ Things to consider:
 - [✔️] Mention the execution time for each API
 ![image](https://user-images.githubusercontent.com/68610608/184121244-13b6c945-2796-4a6c-a913-5a40fb636c37.png)
 ---
+
 - [✔️] Provide the table/collection for database. > Inbuilt with RAPID API support.
 - [✔️] Provide basic validations if needed
+
+## ACKNOWLEDGEMENTS
+- Good learning experience.
